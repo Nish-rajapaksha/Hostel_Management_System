@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardContext" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashBoardFormController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="73.0" prefWidth="900.0" style="-fx-background-color: #0D0D0D;">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" prefHeight="40.0" prefWidth="182.0" text="D24 HOSTEL" textFill="#f2f2f2">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="196.0" layoutY="42.0" text="The Safest Place to Stay ">
+               <font>
+                  <Font name="Bodoni MT" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="706.0" layoutY="30.0" text="Time :" />
+            <Label fx:id="lblTime" layoutX="771.0" layoutY="26.0" prefHeight="28.0" prefWidth="108.0" text="Label" textFill="#fffefe">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="465.0" layoutY="30.0" text="Date :" />
+            <Label fx:id="lblDate" layoutX="566.0" layoutY="29.0" prefHeight="21.0" prefWidth="118.0" text="Label" textFill="#f8f7f7">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="198.0" prefHeight="449.0" prefWidth="215.0" style="-fx-background-color: #bdc3c7;">
+         <children>
+            <JFXButton layoutX="8.0" layoutY="14.0" onAction="#btnManageStudentsOnAction" prefHeight="49.0" prefWidth="182.0" style="-fx-border-color: #0D0D0D;" text="Manage Students" />
+            <JFXButton layoutX="8.0" layoutY="79.0" onAction="#btnManageRoomsOnAction" prefHeight="49.0" prefWidth="182.0" style="-fx-border-color: #0D0D0D;" text="Manage Rooms" />
+            <JFXButton layoutX="8.0" layoutY="145.0" onAction="#btnMakeRegistrationOnAction" prefHeight="49.0" prefWidth="182.0" style="-fx-border-color: #0D0D0D;" text="Make a  Registration" />
+            <JFXButton layoutX="107.0" layoutY="410.0" onAction="#btnLogOutOnAction" prefHeight="49.0" prefWidth="108.0" style="-fx-background-color: #242B2E;" text="LOG OUT" textFill="#f2efef" />
+            <JFXButton layoutX="8.0" layoutY="213.0" onAction="#btnUserOnAction" prefHeight="49.0" prefWidth="182.0" style="-fx-border-color: #0D0D0D;" text="User" />
+            <JFXButton layoutX="8.0" layoutY="341.0" onAction="#btnHomeOnAction" prefHeight="49.0" prefWidth="182.0" style="-fx-border-color: #0D0D0D; -fx-background-color: #CAD5E2;" text="Home" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dashBoard2Context" layoutX="210.0" layoutY="70.0" prefHeight="726.0" prefWidth="690.0">
+         <children>
+            <ImageView fitHeight="330.0" fitWidth="556.0" layoutX="98.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asset/20945152.jpg" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tblRegistration" layoutX="13.0" layoutY="404.0" prefHeight="291.0" prefWidth="668.0">
+              <columns>
+                <TableColumn prefWidth="72.0" text="Name" />
+                <TableColumn prefWidth="77.0" text="Address" />
+                  <TableColumn prefWidth="111.0" text="Content" />
+                  <TableColumn prefWidth="93.0" text="Gender" />
+                  <TableColumn prefWidth="86.0" text="Room Id" />
+                  <TableColumn prefWidth="101.0" text="Date" />
+                  <TableColumn prefWidth="127.0" text="Status" />
+              </columns>
+            </TableView>
+            <Label layoutX="25.0" layoutY="363.0" prefHeight="21.0" prefWidth="182.0" text="Registration Details">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="126.0" layoutY="392.0" startX="-100.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

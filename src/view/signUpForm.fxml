@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signUpContext" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.signUpFormController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="900.0" style="-fx-background-color: #CAD5E2;">
+         <children>
+            <AnchorPane layoutX="334.0" layoutY="-1.0" prefHeight="79.0" prefWidth="215.0" style="-fx-background-color: #1B98F5;">
+               <children>
+                  <Label layoutX="66.0" layoutY="25.0" text="Sign Up ">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="34.0" layoutY="133.0" prefHeight="43.0" prefWidth="162.0" text="User Name :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtName" layoutX="31.0" layoutY="176.0" prefHeight="43.0" prefWidth="215.0" />
+            <Label layoutX="24.0" layoutY="256.0" prefHeight="43.0" prefWidth="162.0" text="Password :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="246.0" layoutY="589.0" onAction="#btnSignUpOnAction" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #35BDD0;" text="Sign Up" />
+            <JFXButton layoutX="400.0" layoutY="589.0" onAction="#btnBackOnAction" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #35BDD0;" text="&lt;&lt; Back" />
+            <Label layoutX="24.0" layoutY="390.0" prefHeight="43.0" prefWidth="162.0" text="Confirm Password :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="pwdPassword" layoutX="24.0" layoutY="322.0" prefHeight="31.0" prefWidth="215.0" />
+            <JFXPasswordField fx:id="pwdPassword1" layoutX="24.0" layoutY="450.0" prefHeight="31.0" prefWidth="215.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="726.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userFormController">
+   <children>
+      <AnchorPane prefHeight="64.0" prefWidth="690.0" style="-fx-border-color: #0D0D0D;">
+         <children>
+            <Label layoutX="36.0" layoutY="16.0" text="User Account Details Managements">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtPassword" layoutX="242.0" layoutY="355.0" prefHeight="52.0" prefWidth="216.0" />
+      <Label layoutX="142.0" layoutY="363.0" prefHeight="35.0" prefWidth="76.0" text="Password :" />
+      <Label layoutX="142.0" layoutY="275.0" prefHeight="35.0" prefWidth="87.0" text="User Name :" />
+      <TextField fx:id="txtUserName" layoutX="246.0" layoutY="267.0" prefHeight="52.0" prefWidth="216.0" />
+      <JFXButton layoutX="319.0" layoutY="466.0" onAction="#btnUpdateUserOnAction" prefHeight="52.0" prefWidth="139.0" style="-fx-border-color: #0D0D0D; -fx-background-color: #CAD5E2;" text="Update User" />
+   </children>
+</AnchorPane>
